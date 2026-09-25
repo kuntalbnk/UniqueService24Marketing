@@ -201,6 +201,13 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
+  padding-top: 100px;
+}
+
+@media (max-width: 991px) {
+  .us24-hero {
+    padding-top: 120px;
+  }
 }
 
 .us24-hero-bg {
