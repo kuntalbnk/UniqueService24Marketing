@@ -1,0 +1,352 @@
+/* UniqueService24 Marketing Site - Custom Theme */
+
+:root {
+  --us24-orange: #FAA938;
+  --us24-orange-deep: #F16A1B;
+  --us24-navy: #1F2937;
+  --us24-slate: #8A92A6;
+  --us24-light: #F5F6FA;
+  --us24-white: #ffffff;
+  --us24-dark: #212529;
+  --us24-radius: 0.75rem;
+  --us24-radius-lg: 1rem;
+  --us24-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+  --us24-shadow-lg: 0 1rem 2rem rgba(0, 0, 0, 0.12);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--us24-dark);
+  scroll-behavior: smooth;
+}
+
+/* Gradient utilities */
+.us24-gradient-text {
+  background: linear-gradient(135deg, var(--us24-orange) 0%, var(--us24-orange-deep) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.us24-gradient-bg {
+  background: linear-gradient(135deg, var(--us24-orange) 0%, var(--us24-orange-deep) 100%);
+}
+
+.us24-gradient-hero {
+  background: linear-gradient(135deg, rgba(31, 41, 55, 0.95) 0%, rgba(31, 41, 55, 0.85) 100%);
+}
+
+/* Buttons */
+.us24-btn-primary {
+  background: linear-gradient(135deg, var(--us24-orange) 0%, var(--us24-orange-deep) 100%);
+  color: white;
+  padding: 0.75rem 1.75rem;
+  border-radius: 50rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+}
+
+.us24-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1.25rem rgba(241, 106, 27, 0.35);
+  color: white;
+}
+
+.us24-btn-outline {
+  border: 2px solid var(--us24-orange);
+  color: var(--us24-orange);
+  padding: 0.75rem 1.75rem;
+  border-radius: 50rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+}
+
+.us24-btn-outline:hover {
+  background: linear-gradient(135deg, var(--us24-orange) 0%, var(--us24-orange-deep) 100%);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.us24-btn-navy {
+  background-color: var(--us24-navy);
+  color: white;
+  padding: 0.75rem 1.75rem;
+  border-radius: 50rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+}
+
+.us24-btn-navy:hover {
+  background-color: #111827;
+  transform: translateY(-2px);
+  color: white;
+}
+
+/* Cards */
+.us24-card {
+  background: white;
+  border-radius: var(--us24-radius-lg);
+  box-shadow: var(--us24-shadow);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.us24-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--us24-shadow-lg);
+}
+
+.us24-icon-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  background: rgba(250, 169, 56, 0.12);
+  color: var(--us24-orange-deep);
+}
+
+/* Section title */
+.us24-section-title {
+  font-weight: 700;
+  color: var(--us24-navy);
+  margin-bottom: 0.75rem;
+}
+
+.us24-section-subtitle {
+  color: var(--us24-slate);
+  max-width: 700px;
+}
+
+/* Navbar */
+.us24-navbar {
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+}
+
+.us24-navbar.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  padding: 0.5rem 0;
+}
+
+.us24-navbar.scrolled .nav-link {
+  color: var(--us24-navy) !important;
+}
+
+.us24-navbar.scrolled .navbar-brand {
+  color: var(--us24-navy) !important;
+}
+
+.us24-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.3s ease;
+}
+
+.us24-navbar .nav-link:hover,
+.us24-navbar .nav-link.active {
+  color: var(--us24-orange) !important;
+}
+
+/* Hero */
+.us24-hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.us24-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(31, 41, 55, 0.95) 0%, rgba(31, 41, 55, 0.88) 100%),
+              url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+.us24-hero-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(250, 169, 56, 0.2), rgba(241, 106, 27, 0.1));
+  z-index: -1;
+  animation: float 8s ease-in-out infinite;
+}
+
+.us24-hero-shape-1 {
+  width: 500px;
+  height: 500px;
+  top: -100px;
+  right: -100px;
+  animation-delay: 0s;
+}
+
+.us24-hero-shape-2 {
+  width: 300px;
+  height: 300px;
+  bottom: 10%;
+  left: -80px;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.us24-hero-image {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+/* Stats */
+.us24-stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  color: white;
+}
+
+/* Service card image overlay */
+.us24-service-img {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Forms */
+.us24-form-control {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 0.875rem 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.us24-form-control:focus {
+  border-color: var(--us24-orange);
+  box-shadow: 0 0 0 4px rgba(250, 169, 56, 0.15);
+  outline: none;
+}
+
+/* Footer */
+.us24-footer {
+  background-color: var(--us24-navy);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.us24-footer a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.us24-footer a:hover {
+  color: var(--us24-orange);
+}
+
+/* Floating call button */
+.us24-fab {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--us24-orange) 0%, var(--us24-orange-deep) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.5rem 1rem rgba(241, 106, 27, 0.4);
+  transition: all 0.3s ease;
+}
+
+.us24-fab:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+/* Timeline */
+.us24-timeline {
+  position: relative;
+}
+
+.us24-timeline::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--us24-orange), var(--us24-orange-deep));
+}
+
+.us24-timeline-item {
+  position: relative;
+  padding-left: 70px;
+  padding-bottom: 2.5rem;
+}
+
+.us24-timeline-dot {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--us24-orange), var(--us24-orange-deep));
+  border: 4px solid white;
+  box-shadow: 0 0 0 4px rgba(250, 169, 56, 0.2);
+}
+
+/* Page hero */
+.us24-page-hero {
+  padding-top: 140px;
+  padding-bottom: 80px;
+  background: linear-gradient(135deg, rgba(31, 41, 55, 0.95) 0%, rgba(31, 41, 55, 0.9) 100%),
+              url('https://images.unsplash.com/photo-1581092921461-eab62e97a782?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Toast / alert */
+.us24-alert {
+  border-radius: var(--us24-radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.us24-alert-success {
+  background: rgba(26, 160, 83, 0.1);
+  border: 1px solid rgba(26, 160, 83, 0.2);
+  color: #1aa053;
+}
+
+/* Scroll reveal fallback */
+[data-aos] {
+  pointer-events: auto;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - UniqueService24</title>
+    <meta name="description" content="Contact UniqueService24 for home and business service enquiries. Book electrical, plumbing, CCTV, AC repair and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top us24-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="UniqueService24" height="48">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="contact.html" class="us24-btn-primary text-decoration-none"><i class="bi bi-calendar-check"></i> Book a Service</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="us24-page-hero">
+        <div class="container text-center">
+            <h6 class="text-uppercase fw-bold mb-2" style="color: #FAA938; letter-spacing: 2px;" data-aos="fade-down">Contact Us</h6>
+            <h1 class="display-5 fw-bold mb-3" data-aos="fade-up">Get in Touch</h1>
+            <p class="lead opacity-75 mx-auto" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="100">Have a service requirement? Fill out the form and our team will respond quickly.</p>
+        </div>
+    </section>
+
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                    <div class="us24-card p-4 h-100 text-center">
+                        <div class="us24-icon-box mx-auto mb-3"><i class="bi bi-telephone-fill"></i></div>
+                        <h5 class="fw-bold" style="color: #1F2937;">Phone</h5>
+                        <p class="text-muted mb-0">+91 XXXXX XXXXX</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="us24-card p-4 h-100 text-center">
+                        <div class="us24-icon-box mx-auto mb-3"><i class="bi bi-envelope-fill"></i></div>
+                        <h5 class="fw-bold" style="color: #1F2937;">Email</h5>
+                        <p class="text-muted mb-0">uniqueservice24.help@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="us24-card p-4 h-100 text-center">
+                        <div class="us24-icon-box mx-auto mb-3"><i class="bi bi-geo-alt-fill"></i></div>
+                        <h5 class="fw-bold" style="color: #1F2937;">Address</h5>
+                        <p class="text-muted mb-0">Your City, India</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="us24-card p-4 h-100 text-center">
+                        <div class="us24-icon-box mx-auto mb-3"><i class="bi bi-clock-fill"></i></div>
+                        <h5 class="fw-bold" style="color: #1F2937;">Working Hours</h5>
+                        <p class="text-muted mb-0">24/7 Service Available</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <div class="us24-card p-4 p-lg-5">
+                        <h3 class="fw-bold mb-4" style="color: #1F2937;">Send Your Requirement</h3>
+                        <div id="formMessage" class="us24-alert us24-alert-success" style="display: none;"></div>
+                        <form id="contactForm" action="https://formsubmit.co/uniqueservice24.help@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="New Service Enquiry - UniqueService24">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://uniqueservice24.in/contact.html?submitted=true">
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label fw-semibold">Full Name <span style="color: #F16A1B;">*</span></label>
+                                    <input type="text" class="us24-form-control w-100" id="name" name="name" placeholder="Your name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label fw-semibold">Phone Number <span style="color: #F16A1B;">*</span></label>
+                                    <input type="tel" class="us24-form-control w-100" id="phone" name="phone" placeholder="Your phone number" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold">Email Address <span style="color: #F16A1B;">*</span></label>
+                                <input type="email" class="us24-form-control w-100" id="email" name="email" placeholder="you@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="serviceType" class="form-label fw-semibold">Service Type</label>
+                                <select class="us24-form-control w-100" id="serviceType" name="service_type">
+                                    <option value="">Select a service</option>
+                                    <option value="Electrical Repair & Wiring">Electrical Repair & Wiring</option>
+                                    <option value="Plumbing & Sanitary Work">Plumbing & Sanitary Work</option>
+                                    <option value="CCTV Installation & Service">CCTV Installation & Service</option>
+                                    <option value="AC Service & Repair">AC Service & Repair</option>
+                                    <option value="Appliance Repair">Appliance Repair</option>
+                                    <option value="Carpentry & Furniture Work">Carpentry & Furniture Work</option>
+                                    <option value="Painting & Waterproofing">Painting & Waterproofing</option>
+                                    <option value="Cleaning & Pest Control">Cleaning & Pest Control</option>
+                                    <option value="IT / Computer Hardware Support">IT / Computer Hardware Support</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label fw-semibold">Address</label>
+                                <textarea class="us24-form-control w-100" id="address" name="address" rows="2" placeholder="Your full address"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-semibold">Message <span style="color: #F16A1B;">*</span></label>
+                                <textarea class="us24-form-control w-100" id="message" name="message" rows="4" placeholder="Describe your requirement..." required></textarea>
+                            </div>
+                            <button type="submit" class="us24-btn-primary border-0">
+                                <i class="bi bi-send-fill"></i> Send Enquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5" data-aos="fade-left">
+                    <div class="us24-card p-4 h-100">
+                        <h4 class="fw-bold mb-3" style="color: #1F2937;">Find Us</h4>
+                        <p class="text-muted mb-4">Visit our office or reach out through any of the channels above. We are always happy to help.</p>
+                        <div class="ratio ratio-4x3 rounded-4 overflow-hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1234567890123!2d77.12345678901234!3d28.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDA3JzI0LjQiTiA3N8KwMDcnMjQuNCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="mt-4">
+                            <h5 class="fw-bold" style="color: #1F2937;">Prefer to call?</h5>
+                            <p class="text-muted mb-2">Our support team is available 24/7 to take your booking.</p>
+                            <a href="tel:+91XXXXXXXXXX" class="us24-btn-navy text-decoration-none"><i class="bi bi-telephone-fill"></i> +91 XXXXX XXXXX</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: #1F2937;">
+        <div class="container text-center">
+            <h2 class="fw-bold text-white mb-3" data-aos="fade-up">We Usually Respond Within 30 Minutes</h2>
+            <p class="text-white-75 mb-4" data-aos="fade-up" data-aos-delay="100" style="max-width: 600px; margin: 0 auto;">For urgent repairs, please call us directly for the fastest service.</p>
+            <a href="tel:+91XXXXXXXXXX" class="us24-btn-primary text-decoration-none" data-aos="fade-up" data-aos-delay="200"><i class="bi bi-telephone-fill"></i> Call Now</a>
+        </div>
+    </section>
+
+    <footer class="us24-footer pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-block mb-3" href="index.html">
+                        <img src="images/logo.png" alt="UniqueService24" height="55">
+                    </a>
+                    <p>Your trusted partner for home and business maintenance services. Reliable, fast, and transparent — every time.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="fs-5"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="fs-5"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="how-it-works.html">How It Works</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="text-white fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html">Electrical Repair</a></li>
+                        <li class="mb-2"><a href="services.html">Plumbing</a></li>
+                        <li class="mb-2"><a href="services.html">CCTV Installation</a></li>
+                        <li class="mb-2"><a href="services.html">AC & Appliances</a></li>
+                        <li class="mb-2"><a href="services.html">Carpentry</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="text-white fw-bold mb-3">Contact</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-telephone-fill me-2" style="color: #FAA938;"></i>+91 XXXXX XXXXX</li>
+                        <li class="mb-2"><i class="bi bi-envelope-fill me-2" style="color: #FAA938;"></i>uniqueservice24.help@gmail.com</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill me-2" style="color: #FAA938;"></i>Your City, India</li>
+                        <li class="mb-2"><i class="bi bi-clock-fill me-2" style="color: #FAA938;"></i>24/7 Service Available</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <small>&copy; <span class="current-year"></span> UniqueService24. All rights reserved.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <small><a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a></small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="contact.html" class="us24-fab text-decoration-none" title="Contact Us">
+        <i class="bi bi-chat-dots-fill fs-4"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
