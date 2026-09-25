@@ -275,6 +275,14 @@ body {
   width: 100%;
 }
 
+/* How It Works step images - consistent crop */
+.us24-step-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* Forms */
 .us24-form-control {
   border: 1px solid #e2e8f0;
